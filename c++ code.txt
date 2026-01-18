@@ -5,7 +5,7 @@
 using namespace std;
 
 void showMenu() {
-    cout << "\n--- TO-DO LIST MENU ---\n";
+    cout << "\nTO-DO LIST MENU \n";
     cout << "1. Add Task\n";
     cout << "2. View Tasks\n";
     cout << "3. Delete Task\n";
@@ -20,7 +20,7 @@ int main() {
     do {
         showMenu();
         cin >> choice;
-        cin.ignore(); // clear input buffer
+        cin.ignore();
 
         if (choice == 1) {
             string task;
@@ -52,7 +52,7 @@ int main() {
             }
         }
         else if (choice == 4) {
-            cout << "Exiting program. Goodbye!\n";
+            cout << "Exiting program!!\n";
         }
         else {
             cout << "Invalid choice. Try again.\n";
@@ -61,4 +61,5 @@ int main() {
     } while (choice != 4);
 
     return 0;
+
 }
